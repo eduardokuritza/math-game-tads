@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quiz_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="0 + 0 = ?"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/answerInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Sua resposta"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/correctAnswerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responder"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
